@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giomatry Risours</title> 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-8">
+    <!-- header part -->
+    <header>
+
+    </header>
+    <!-- main part -->
+    <main>
+        <!-- aria card containar -->
+    <div class="flex flex-1 md:flex-row">
+        <!-- shape containar -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/triangle.png" alt="" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area = 0.5 x b x h</p>
+                  <div>
+                    <input id="triangle-base" class="w-24 mr-4 ml-2" type="text" name="" id="" placeholder="b">
+                    <span>cm</span>
+                    <input class="w-24 mr-4 ml-2" type="text" name="" id="triangle-heaight" placeholder="h">
+                    <span>cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl"> Area: <span id="triangle-area"></span> <span>cm</span> <sup>2</sup> </p>
+                  </div>
+                  <div class="card-actions ">
+                    <button onclick="calculate()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/rectangle.png" alt="" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">rectangle</h2>
+                  <p>Area (A)= W x I</p>
+                  <div>
+                    <input id="triangle-width" class="w-24 mr-4 ml-2" type="text" name="" id="" placeholder="w">
+                    <span>cm</span>
+                    <input class="w-24 mr-4 ml-2" type="text" name="" id="triangle-length" placeholder="i">
+                    <span>cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl"> Area: <span id="ractangle-area"></span> <span>cm</span> <sup>2</sup> </p>
+                  </div>
+                  <div class="card-actions ">
+                    <button onclick="ractanglele()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/triangle.png" alt="" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area = 0.5 x b x h</p>
+                  <div>
+                    <input id="triangle-base" class="w-24 mr-4 ml-2" type="text" name="" id="" placeholder="b">
+                    <span>cm</span>
+                    <input class="w-24 mr-4 ml-2" type="text" name="" id="triangle-heaight" placeholder="h">
+                    <span>cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl"> Area: <span id="triangle-area"></span> <span>cm</span> <sup>2</sup> </p>
+                  </div>
+                  <div class="card-actions ">
+                    <button onclick="calculate()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="w-96 border-2 border-gray-700 rounded-md">
+            <h3 class="text-3xl text-center pt-3">text calculations</h3>
+          </div>
+    </div>
+    <!-- aria sape container -->
+  
+    </main>
+    <script src="scricpt/calculate.js"></script>
+</body>
+</html>
